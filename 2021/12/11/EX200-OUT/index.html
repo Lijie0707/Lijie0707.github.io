@@ -6,15 +6,29 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://documentss.xyz">
-  <title>Archives: 2021 | Archive/李炎杰的博客</title>
+  <title>RH124 | Archive/李炎杰的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Archive&#x2F;李炎杰的博客">
-<meta property="og:url" content="http://documentss.xyz/archives/2021/index.html">
+  <meta name="description" content="RHCE（EX294-RHCSA-QA）EX294-RHCSA-QA">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RH124">
+<meta property="og:url" content="http://documentss.xyz/2021/12/11/EX200-OUT/index.html">
 <meta property="og:site_name" content="Archive&#x2F;李炎杰的博客">
+<meta property="og:description" content="RHCE（EX294-RHCSA-QA）EX294-RHCSA-QA">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png">
+<meta property="og:image" content="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png">
+<meta property="og:image" content="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png">
+<meta property="og:image" content="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png">
+<meta property="og:image" content="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png">
+<meta property="og:image" content="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png">
+<meta property="og:image" content="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png">
+<meta property="og:image" content="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png">
+<meta property="og:image" content="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png">
+<meta property="article:published_time" content="2021-12-11T14:34:00.000Z">
+<meta property="article:modified_time" content="2021-12-11T01:35:14.810Z">
 <meta property="article:author" content="Li">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png">
   
     <link rel="alternative" href="/atom.xml" title="Archive/李炎杰的博客" type="application/atom+xml">
   
@@ -172,39 +186,255 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-EX200-OUT" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      RH124
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+
+        
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2021/12/11/EX200-OUT/" class="archive-article-date">
   	<time datetime="2021-12-11T14:34:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-11</time>
 </a>
 
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/11/EX200-OUT/">RH124</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
 
-        <div class="article-info info-on-right">
-          
-          
+        <h1 id="RHCE（EX294-RHCSA-QA）"><a href="#RHCE（EX294-RHCSA-QA）" class="headerlink" title="RHCE（EX294-RHCSA-QA）"></a>RHCE（EX294-RHCSA-QA）</h1><p>EX294-RHCSA-QA</p>
+<span id="more"></span>
+
+<h4 id="14-配置容器使其自动启动（A卷）-RH134-c13"><a href="#14-配置容器使其自动启动（A卷）-RH134-c13" class="headerlink" title="14. 配置容器使其自动启动（A卷）: RH134-c13"></a>14. 配置容器使其自动启动（A卷）: RH134-c13</h4><blockquote>
+<p><strong>配置容器使其自动启动（A卷）</strong></p>
+<p>利用注册服务器上的 <code>rsyslog</code> 镜像，创建一个名为  <code>logserver</code> 的容器</p>
+<ul>
+<li><input disabled="" type="checkbox"> 面向 <code>wallah</code> 用户，配置一个 systemd 服务</li>
+<li><input disabled="" type="checkbox"> 该服务命名为 <code>container-logserver</code> ，并在系统重启时自动启动，无需干预</li>
+</ul>
+</blockquote>
+<h4 id="15-为容器配置持久存储（A卷）-c11-RH134-c13"><a href="#15-为容器配置持久存储（A卷）-c11-RH134-c13" class="headerlink" title="15. 为容器配置持久存储（A卷）: c11,RH134-c13"></a>15. 为容器配置持久存储（A卷）: c11,RH134-c13</h4><blockquote>
+<p><strong>为容器配置持久存储（A卷）</strong></p>
+<p>通过以下方式扩展上一个任务的服务</p>
+<ul>
+<li><input disabled="" type="checkbox"> 配置主机系统的 journald 日志以在系统重启后保留数据，并重新启动日志记录服务</li>
+<li><input disabled="" type="checkbox"> 将主机 <code>/var/log/journal</code>目录下任何以 <code>*.journal</code> 的文件复制到 <code>/home/wallah/container_logfile</code> 中</li>
+<li><input disabled="" type="checkbox"> 将服务配置为在启动时自动将   <code>/home/wallah/container_logfile</code> 挂载到容器中的 <code>/var/log/journal</code> 下</li>
+</ul>
+</blockquote>
+<div style="background: #dbfaf4; padding: 12px; line-height: 24px; margin-bottom: 24px;">
+<dt style="background: #1abc9c; padding: 6px 12px; font-weight: bold; display: block; color: #fff; margin: -12px; margin-bottom: -12px; margin-bottom: 12px;" >Hint - 提示</dt>
+  <li> <b>建议</b> A卷两题一起做
+</div>
+<div style="background: #f0f0f0; padding: 12px; line-height: 24px; margin-bottom: 24px;">
+<dt style="background: #ee0000; padding: 6px 12px; font-weight: bold; display: block; color: #fff; margin: -12px; margin-bottom: -12px; margin-bottom: 12px;" >Important - 重要</dt>
+  <li> podman 默认已经安装 1.9 版本<br>
+  <li> 注意路径，登陆下网页确认
+  <li> 一定要 <b>ssh</b>
+</div>
+
+<p><strong><img width=35 src="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png"> [node1]</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># systemctl list-unit-files | grep journal</span></span><br><span class="line"><span class="comment"># systemctl status systemd-journald</span></span><br><span class="line"><span class="comment"># man journald.conf</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># vim /etc/systemd/journald.conf</span></span><br><span class="line"><span class="comment">#`Storage`=`auto`</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># man journald.conf</span></span><br><span class="line">/Storage</span><br><span class="line">Storage=</span><br><span class="line">           Controls <span class="built_in">where</span> to store journal data. One of <span class="string">&quot;volatile&quot;</span>,</span><br><span class="line">           <span class="string">&quot;persistent&quot;</span>, <span class="string">&quot;auto&quot;</span> and <span class="string">&quot;none&quot;</span>. If <span class="string">&quot;volatile&quot;</span>, journal <span class="built_in">log</span> data</span><br><span class="line">           will be stored only <span class="keyword">in</span> memory, i.e. below the `/run/<span class="built_in">log</span>/journal`</span><br><span class="line">					 ...</span><br><span class="line">           and <span class="keyword">if</span> the disk is not writable.  <span class="string">&quot;auto&quot;</span> is similar to <span class="string">&quot;persistent&quot;</span></span><br><span class="line">           but the directory `/var/<span class="built_in">log</span>/journal` is not created <span class="keyword">if</span> needed, so</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># ll -d /run/log/journal </span></span><br><span class="line">drwxr-sr-x. 3 root systemd-journal 60 Mar 24 17:56 /run/<span class="built_in">log</span>/journal</span><br><span class="line"></span><br><span class="line"><span class="comment"># mkdir /var/log/journal</span></span><br><span class="line"><span class="comment"># chown root:systemd-journal /var/log/journal</span></span><br><span class="line"><span class="comment"># chmod g+s /var/log/journal</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># systemctl restart systemd-journald</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ls /var/log/journal</span></span><br><span class="line">f874df04639f474cb0a9881041f4f7d4</span><br><span class="line"><span class="comment"># ls /run/log/journal</span></span><br><span class="line">ls: cannot access <span class="string">&#x27;/run/log/journal&#x27;</span>: No such file or directory</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># cp /var/log/journal/*/*.journal /home/wallah/container_logfile/</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># chown -R wallah ~wallah</span></span><br><span class="line"><span class="comment"># ll -Z /home/wallah/container_logfile/</span></span><br></pre></td></tr></table></figure>
+
+<p><strong><img width=35 src="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png"> [node1]</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ssh wallah@localhost</span></span><br><span class="line">$ podman login registry.domain250.example.com</span><br><span class="line">Username: `admin`</span><br><span class="line">Password: `redhat321`</span><br><span class="line">login Succeeded!</span><br><span class="line"></span><br><span class="line">$ podman search registry.domain250.example.com/</span><br><span class="line">INDEX         NAME                                         DESCRIPTION   STARS   OFFICIAL   AUTOMATED</span><br><span class="line">example.com   registry.domain250.example.com/rhel8/rsyslog               0</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">$ podman run -d --name logserver \</span><br><span class="line">-v /home/wallah/container_logfile:/var/<span class="built_in">log</span>/journal:Z \</span><br><span class="line">registry.domain250.example.com/rhel8/rsyslog</span><br><span class="line">$ podman stop logserver</span><br><span class="line"></span><br><span class="line">$ loginctl enable-linger</span><br><span class="line">$ loginctl show-user wallah</span><br><span class="line"></span><br><span class="line">$ MANWIDTH=160; man systemd.unit | grep config.*user</span><br><span class="line">...</span><br><span class="line">       `│<span class="variable">$HOME</span>/.config/systemd/user`                      │...</span><br><span class="line"></span><br><span class="line">$ mkdir -p ~/.config/systemd/user/</span><br><span class="line">$ <span class="built_in">cd</span> ~/.config/systemd/user/</span><br><span class="line">$ podman generate systemd -n logserver -f</span><br><span class="line">$ systemctl --user <span class="built_in">enable</span> --now container-logserver</span><br><span class="line">$ systemctl --user status container-logserver</span><br><span class="line"></span><br><span class="line">$ podman <span class="built_in">exec</span> logserver ls /var/<span class="built_in">log</span>/journal</span><br><span class="line">system.journal</span><br><span class="line">user-1004.journal</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ &lt;Ctrl-D&gt;</span><br><span class="line"><span class="comment"># reboot</span></span><br><span class="line"><span class="comment"># ps aux | grep -n podman</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="16-配置容器使其自动启动（B卷）-RH134-c13"><a href="#16-配置容器使其自动启动（B卷）-RH134-c13" class="headerlink" title="16. 配置容器使其自动启动（B卷）: RH134-c13"></a>16. 配置容器使其自动启动（B卷）: RH134-c13</h4><blockquote>
+<p><strong>配置容器使其自动启动（B卷）</strong></p>
+<p>利用注册服务器上的 <code>rsyslog</code> 镜像，创建一个名为  <code>logger</code> 的容器</p>
+<ul>
+<li><p><input disabled="" type="checkbox">  面向 <code>wallah</code> 用户，配置一个 systemd 服务</p>
+</li>
+<li><p><input disabled="" type="checkbox">  该服务命名为 <code>container-logger</code> ，并在系统重启时自动启动，无需干预</p>
+</li>
+<li><p><input disabled="" type="checkbox">  将服务配置为在启动时自动将   <code>/home/wallah/var_log</code> 挂载到容器中的 <code>/var/log</code> 下</p>
+</li>
+<li><p><input disabled="" type="checkbox">  在容器中执行命令<code>podman exec logger logger -p authpriv.info SUIBIAN</code></p>
+</li>
+</ul>
+</blockquote>
+<p><strong><img width=35 src="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png"> [node1]</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ssh wallah@localhost</span></span><br><span class="line">$ podman login -u admin -p redhat321</span><br><span class="line">WARNING! ...</span><br><span class="line">login Succeeded!</span><br><span class="line"></span><br><span class="line">$ podman search registry.domain250.example.com/</span><br><span class="line">INDEX         NAME                                         DESCRIPTION   STARS   OFFICIAL   AUTOMATED</span><br><span class="line">example.com   registry.domain250.example.com/rhel8/rsyslog               0</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">$ podman run -d --name logger \</span><br><span class="line">-v /home/wallah/var_log:/var/<span class="built_in">log</span>:Z \</span><br><span class="line">registry.domain250.example.com/rhel8/rsyslog</span><br><span class="line">$ podman stop logger</span><br><span class="line"></span><br><span class="line">$ loginctl enable-linger</span><br><span class="line">$ loginctl show-user wallah</span><br><span class="line"></span><br><span class="line">$ MANWIDTH=160; man systemd.unit | grep -A 20 \\--user</span><br><span class="line">...</span><br><span class="line">       │<span class="variable">$HOME</span>/.config/systemd/user │...</span><br><span class="line"></span><br><span class="line">$ mkdir -p ~/.config/systemd/user/</span><br><span class="line">$ <span class="built_in">cd</span> ~/.config/systemd/user/</span><br><span class="line">$ podman generate systemd -n logger -f</span><br><span class="line">$ systemctl --user <span class="built_in">enable</span> --now container-logger</span><br><span class="line">$ systemctl --user status container-logger</span><br><span class="line"></span><br><span class="line">$ podman <span class="built_in">exec</span> logger logger -p authpriv.info SUIBIAN</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ grep ^authpriv /etc/rsyslog.conf </span><br><span class="line">authpriv.*                                              /var/<span class="built_in">log</span>/`secure`</span><br><span class="line">$ grep SUIBIAN /home/wallah/var_log/secure </span><br><span class="line">2021-08-13T11:45:37.824980+00:00 574761d4236a root: SUIBIAN</span><br><span class="line"></span><br><span class="line">$ &lt;Ctrl-D&gt;</span><br><span class="line"><span class="comment"># reboot</span></span><br><span class="line"><span class="comment"># ps -aux | grep podman</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="17-容器nginx（附加题）-RH134-c13"><a href="#17-容器nginx（附加题）-RH134-c13" class="headerlink" title="17. 容器nginx（附加题）: RH134-c13"></a>17. 容器nginx（附加题）: RH134-c13</h4><blockquote>
+<p><strong>容器nginx</strong></p>
+<p>利用注册服务器上的 <code>nginx</code> 镜像，创建一个名为  <code>nginx</code> 的容器</p>
+<ul>
+<li><input disabled="" type="checkbox"> 面向 <code>wallah</code> 用户，配置一个 systemd 服务</li>
+<li><input disabled="" type="checkbox"> 该服务命名为 <code>container-nginx</code> ，并在系统重启时自动启动，无需干预</li>
+<li><input disabled="" type="checkbox"> 在<code>/home/wallah/www</code>下创建文件<code>index.html</code>，内容为<code>hello nginx</code></li>
+<li><input disabled="" type="checkbox"> 将服务配置为在启动时自动将   <code>/home/wallah/www</code> 挂载到容器中的 <code>/usr/share/nginx/html</code> 下</li>
+<li><input disabled="" type="checkbox"> 将容器主机上的端口 <code>8080</code> 映射到容器上的端口 <code>80</code></li>
+</ul>
+</blockquote>
+<p><strong><img width=35 src="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png"> [root@node1]</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># man -k registries</span></span><br><span class="line">`containers-registries.conf` (5) - Syntax of System Registry Configuration File</span><br><span class="line">...输入省略...</span><br><span class="line"><span class="comment"># man containers-registries.conf</span></span><br><span class="line"><span class="comment"># ls /etc/containers/registries.conf ~wallah/.config/containers/registries.conf</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ssh wallah@localhost</span></span><br><span class="line"></span><br><span class="line">$ cp /etc/containers/registries.conf ~wallah/.config/containers/registries.conf</span><br><span class="line">$ vim ~wallah/.config/containers/registries.conf</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># The first version</span></span><br><span class="line"><span class="section">[registries.search]</span></span><br><span class="line"><span class="attr">registries</span> = [<span class="string">&#x27;registry.domain250.example.com&#x27;</span>]</span><br><span class="line"><span class="section">[registries.insecure]</span></span><br><span class="line"><span class="attr">registries</span> = [<span class="string">&#x27;registry.domain250.example.com&#x27;</span>]</span><br><span class="line"><span class="section">[registries.block]</span></span><br><span class="line"><span class="attr">registries</span> = []</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># The second version</span></span><br><span class="line">unqualified-search-registries = [<span class="string">&quot;registry.domain250.example.com&quot;</span>]</span><br><span class="line">[[registry]]</span><br><span class="line">location = <span class="string">&quot;registry.domain250.example.com&quot;</span></span><br><span class="line">insecure = <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">$ podman info</span><br><span class="line">...输出省略...</span><br><span class="line">registries:</span><br><span class="line">  registry.domain250.example.com:</span><br><span class="line">    Blocked: <span class="literal">false</span></span><br><span class="line">    Insecure: <span class="literal">true</span></span><br><span class="line">    Location: registry.domain250.example.com</span><br><span class="line">    MirrorByDigestOnly: <span class="literal">false</span></span><br><span class="line">    Mirrors: null</span><br><span class="line">    Prefix: registry.domain250.example.com</span><br><span class="line">  search:</span><br><span class="line">  - registry.domain250.example.com</span><br><span class="line">...输出省略...</span><br><span class="line"></span><br><span class="line">$ podman login registry.domain250.example.com</span><br><span class="line">Username: `admin`</span><br><span class="line">Password: `redhat321`</span><br><span class="line">login Succeeded!</span><br><span class="line"></span><br><span class="line">$ podman search registry.domain250.example.com/</span><br><span class="line">INDEX         NAME         DESCRIPTION   STARS   OFFICIAL   AUTOMATED</span><br><span class="line">example.com   registry.domain250.example.com/library/nginx          0</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">$ mkdir /home/wallah/www</span><br><span class="line">$ <span class="built_in">echo</span> hello nginx &gt; /home/wallah/www/index.html</span><br><span class="line"></span><br><span class="line">$ podman run \</span><br><span class="line">-d \</span><br><span class="line">--name nginx \</span><br><span class="line">-v /home/wallah/www:/usr/share/nginx/html:Z \</span><br><span class="line">-p 8080:80 \</span><br><span class="line">registry.domain250.example.com/library/nginx</span><br><span class="line"></span><br><span class="line">启用『逗留功能』</span><br><span class="line">$ loginctl enable-linger</span><br><span class="line">确认『逗留功能』</span><br><span class="line">$ loginctl show-user wallah</span><br><span class="line"></span><br><span class="line">$ MANWIDTH=160; man systemd.unit | grep config.*user</span><br><span class="line">       ~/.config/systemd/user.control/*</span><br><span class="line">       `~/.config/systemd/user/*`</span><br><span class="line">       │~/.config/systemd/user.control                   |...</span><br><span class="line">       │<span class="variable">$HOME</span>/.config/systemd/user                       │...</span><br><span class="line"></span><br><span class="line">$ mkdir -p ~/.config/systemd/user/</span><br><span class="line">$ <span class="built_in">cd</span> ~/.config/systemd/user/</span><br><span class="line">生成用户的单元文件</span><br><span class="line">$ podman generate systemd -n nginx -f</span><br><span class="line">$ podman stop nginx</span><br><span class="line">$ systemctl --user <span class="built_in">enable</span> --now container-nginx</span><br><span class="line">$ systemctl --user status container-nginx</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ curl localhost:8080</span><br><span class="line">hello nginx</span><br><span class="line">$ &lt;Ctrl-D&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># reboot</span></span><br><span class="line"></span><br><span class="line">验证方式A</span><br><span class="line"><span class="comment"># curl localhost:8080</span></span><br><span class="line">验证方式B</span><br><span class="line"><span class="comment"># ss -antup | grep 8080</span></span><br><span class="line">验证方式C</span><br><span class="line"><span class="comment"># ps -aux | grep podman</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="18-添加sudo免密操作（附加题）-c10"><a href="#18-添加sudo免密操作（附加题）-c10" class="headerlink" title="18. 添加sudo免密操作（附加题）- c10"></a>18. 添加sudo免密操作（附加题）- c10</h4><blockquote>
+<p><strong>添加sudo免密操作</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> 允许<code>sysmgrs</code>组成员sudo时不需要密码</li>
+</ul>
+</blockquote>
+<p><strong><img width=35 src="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png"> [node1]</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># visudo</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="comment"># %wheel        ALL=(ALL)       NOPASSWD: ALL</span></span><br><span class="line">%sysmgrs        <span class="attr">ALL</span>=(ALL)       NOPASSWD: ALL</span><br></pre></td></tr></table></figure>
+
+<p><kbd>/</kbd>NOP<kbd>Enter</kbd>, <kbd>y</kbd><kbd>y</kbd>, <kbd>p</kbd>, <kbd>d</kbd><kbd>w</kbd>, <kbd>w</kbd>,<br> <kbd>c</kbd><kbd>w</kbd>, <kbd>Ctrl</kbd>-<kbd>Shfit</kbd>-<kbd>v</kbd>, <kbd>Esc</kbd>, <br> <kbd>Z</kbd><kbd>Z</kbd></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># su - natasha</span></span><br><span class="line">$ sudo tail /var/<span class="built_in">log</span>/messages</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="19-配置创建新用户的密码策略（附加题）-c6"><a href="#19-配置创建新用户的密码策略（附加题）-c6" class="headerlink" title="19. 配置创建新用户的密码策略（附加题）: c6"></a>19. 配置创建新用户的密码策略（附加题）: c6</h4><blockquote>
+<p><strong>配置创建新用户的密码策略</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> 创建新用户时，默认密码策略为<code>20</code>天后，密码会过期</li>
+</ul>
+</blockquote>
+<p><strong><img width=35 src="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png"> [node1]</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># man useradd</span></span><br><span class="line">&lt;G&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># vim /etc/login.defs</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">PASS_MAX_DAYS   20</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># useradd dog</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># chage -l dog</span></span><br><span class="line">Last password change			: Apr 29, 2021</span><br><span class="line">Password expires					: May 19, 2021</span><br><span class="line">Password inactive					: never</span><br><span class="line">Account expires						: never</span><br><span class="line">Minimum number of days between password change		: 0</span><br><span class="line">Maximum number of days between password change		: `20`</span><br><span class="line">Number of days of warning before password expires	: 7</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="20-创建脚本（附加题）（A卷）-RH134-c1"><a href="#20-创建脚本（附加题）（A卷）-RH134-c1" class="headerlink" title="20. 创建脚本（附加题）（A卷）: RH134-c1"></a>20. 创建脚本（附加题）（A卷）: RH134-c1</h4><blockquote>
+<p><strong>创建脚本</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> 创建一个名为<code>myresearch</code>的脚本</li>
+<li><input disabled="" type="checkbox"> 该脚本放置在<code>/usr/bin</code>下</li>
+<li><input disabled="" type="checkbox"> 该脚本用来查找<code>/usr</code>下所有小于<code>10m</code>且具有修改<code>组ID</code>权限的文件，将这些文件放置于<code>/root/myfiles</code>下 </li>
+</ul>
+</blockquote>
+<div style="background: #f0f0f0; padding: 12px; line-height: 24px; margin-bottom: 24px;">
+<dt style="background: #ee0000; padding: 6px 12px; font-weight: bold; display: block; color: #fff; margin: -12px; margin-bottom: -12px; margin-bottom: 12px;" >Important - 重要</dt>
+此题做完后，一定要<b>df -h /</b> 看一下根分区的容量
+</div>
+
+<p><strong><img width=35 src="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png"> [node1]</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim /etc/bashrc</span></span><br><span class="line">/<span class="keyword">if</span> 查找<span class="keyword">if</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># man test | grep \\-d</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># vim /usr/bin/myresearch</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ ! -d /root/myfiles ]; <span class="keyword">then</span> </span><br><span class="line">  mkdir /root/myfiles</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">find /usr -size -10M -perm /g=s -<span class="built_in">exec</span> cp -a &#123;&#125; /root/myfiles \;</span><br><span class="line"><span class="comment"># find /usr -size -10M -perm -2000 -ls</span></span><br><span class="line"><span class="comment"># find /usr -size -10M -perm -2000 -exec ls -lh &#123;&#125; \;</span></span><br><span class="line"><span class="comment"># find /usr -size -10M -perm /g=s -exec cp -a &#123;&#125; /root/myfiles \;</span></span><br><span class="line"><span class="comment"># find /usr -size -10M -perm -g=s -exec cp -a &#123;&#125; /root/myfiles \;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># chmod +x /usr/bin/myresearch</span></span><br><span class="line"><span class="comment"># /usr/bin/myresearch</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ll -h /root/myfiles</span></span><br><span class="line">-rwx--`s`--x. 1 root slocate   `47K` Aug 12  2018 locate</span><br><span class="line">-r-xr-`s`r-x. 1 root ssh_keys `464K` Nov 26  2018 ssh-keysign</span><br><span class="line">-rwx--`s`--x. 1 root utmp      `13K` Aug 12  2018 utempter</span><br><span class="line">-rwxr-`s`r-x. 1 root tty       `23K` Dec 11  2018 write</span><br><span class="line"></span><br><span class="line"><span class="comment"># df -h /</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="21-创建脚本（附加题）（B卷）-RH134-c1"><a href="#21-创建脚本（附加题）（B卷）-RH134-c1" class="headerlink" title="21. 创建脚本（附加题）（B卷）: RH134-c1"></a>21. 创建脚本（附加题）（B卷）: RH134-c1</h4><blockquote>
+<p><strong>创建脚本</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> 创建一个名为<code>newsearch</code>的脚本</li>
+<li><input disabled="" type="checkbox"> 该脚本放置在<code>/usr/bin</code>下</li>
+<li><input disabled="" type="checkbox"> 该脚本用来查找<code>/usr</code>下所有大于<code>30k</code>，但是小于<code>50k</code>且具有<code>SUID</code>权限的文件，将这些文件放置于<code>/root/newfiles</code>下 </li>
+</ul>
+</blockquote>
+<p><strong><img width=35 src="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png"> [node1]</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim /usr/bin/newsearch</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ ! -d /root/newfiles ]; <span class="keyword">then</span></span><br><span class="line">  mkdir /root/newfiles</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">find /usr -size +30k -size -50k -perm /u=s -<span class="built_in">exec</span> cp -a &#123;&#125; /root/newfiles \;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># chmod +x /usr/bin/newsearch</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># /usr/bin/newsearch</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ls -lh /root/newfiles</span></span><br><span class="line">-rws--x--x. 1 root root               33K Dec 17  2019 chfn</span><br><span class="line">-rwsr-x---. 1 root cockpit-wsinstance 46K Mar 12  2020 cockpit-session</span><br><span class="line">-rwsr-xr-x. 1 root root               33K Dec 13  2019 passwd</span><br><span class="line">-rwsr-xr-x. 1 root root               33K Dec 17  2019 umount</span><br><span class="line">-rwsr-xr-x. 1 root root               37K Dec 19  2019 unix_chkpwd</span><br><span class="line">-rws--x--x. 1 root root               47K Nov 20  2018 userhelper</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="22-设置默认权限（附加题）"><a href="#22-设置默认权限（附加题）" class="headerlink" title="22. 设置默认权限（附加题）"></a>22. 设置默认权限（附加题）</h4><blockquote>
+<p><strong>设置默认权限</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> 用户<code>manalo</code>在 node1 上，所有新创建的文件都应具有<code>-r--r--r--</code>的默认权限</li>
+<li><input disabled="" type="checkbox"> 此用户的所有新创建目录应具有<code>dr-xr-xr-x</code>的默认权限</li>
+</ul>
+</blockquote>
+<div style="background: #dbfaf4; padding: 12px; line-height: 24px; margin-bottom: 24px;">
+<dt style="background: #1abc9c; padding: 6px 12px; font-weight: bold; display: block; color: #fff; margin: -12px; margin-bottom: -12px; margin-bottom: 12px;" >Hint - 提示</dt>
+file   = 666 - umask = 666 - 444 = 222<br>
+folder = 777 - umask
+</div>
+
+
+<p><strong><img width=35 src="https://gitee.com/suzhen99/redhat/raw/master/images/virt-viewer.png"> [node1]</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># su - manalo</span></span><br><span class="line"></span><br><span class="line">$ ls -a</span><br><span class="line">.  ..  .bash_logout  `.bash_profile`  `.bashrc`</span><br><span class="line">$ vim ~/.bashrc</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">...内容省略...</span><br><span class="line">umask 222</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-m1 立即生效</span><br><span class="line">$ <span class="built_in">source</span> ~/.bashrc</span><br><span class="line"></span><br><span class="line">-m2 注销，重新登陆</span><br><span class="line">$ &lt;Ctrl-D&gt;</span><br><span class="line">$ </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">umask</span></span><br><span class="line"></span><br><span class="line">$ touch file; mkdir folder</span><br><span class="line">$ ll -d f*</span><br></pre></td></tr></table></figure>
+
+
+      
+
+<!-- 增加版权声明 -->
+
+
+
+  <div class="declare" hidden="hidden"></div>
+
+
+<!-- 增加版权声明结束 -->
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -217,411 +447,138 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://documentss.xyz/2021/12/11/EX200-OUT/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/12/11/EX200-RHCSA82-QA/" class="archive-article-date">
-  	<time datetime="2021-12-11T14:33:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-11</time>
-</a>
 
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2021/12/11/EX200-RHCSA82-QA/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">RH124</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/11/EX200-RHCSA82-QA/">RH124</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#RHCE%EF%BC%88EX294-RHCSA-QA%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">RHCE（EX294-RHCSA-QA）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#14-%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%BD%BF%E5%85%B6%E8%87%AA%E5%8A%A8%E5%90%AF%E5%8A%A8%EF%BC%88A%E5%8D%B7%EF%BC%89-RH134-c13"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">14. 配置容器使其自动启动（A卷）: RH134-c13</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15-%E4%B8%BA%E5%AE%B9%E5%99%A8%E9%85%8D%E7%BD%AE%E6%8C%81%E4%B9%85%E5%AD%98%E5%82%A8%EF%BC%88A%E5%8D%B7%EF%BC%89-c11-RH134-c13"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">15. 为容器配置持久存储（A卷）: c11,RH134-c13</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#16-%E9%85%8D%E7%BD%AE%E5%AE%B9%E5%99%A8%E4%BD%BF%E5%85%B6%E8%87%AA%E5%8A%A8%E5%90%AF%E5%8A%A8%EF%BC%88B%E5%8D%B7%EF%BC%89-RH134-c13"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">16. 配置容器使其自动启动（B卷）: RH134-c13</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#17-%E5%AE%B9%E5%99%A8nginx%EF%BC%88%E9%99%84%E5%8A%A0%E9%A2%98%EF%BC%89-RH134-c13"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">17. 容器nginx（附加题）: RH134-c13</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#18-%E6%B7%BB%E5%8A%A0sudo%E5%85%8D%E5%AF%86%E6%93%8D%E4%BD%9C%EF%BC%88%E9%99%84%E5%8A%A0%E9%A2%98%EF%BC%89-c10"><span class="toc-number">1.0.0.5.</span> <span class="toc-text">18. 添加sudo免密操作（附加题）- c10</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#19-%E9%85%8D%E7%BD%AE%E5%88%9B%E5%BB%BA%E6%96%B0%E7%94%A8%E6%88%B7%E7%9A%84%E5%AF%86%E7%A0%81%E7%AD%96%E7%95%A5%EF%BC%88%E9%99%84%E5%8A%A0%E9%A2%98%EF%BC%89-c6"><span class="toc-number">1.0.0.6.</span> <span class="toc-text">19. 配置创建新用户的密码策略（附加题）: c6</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#20-%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC%EF%BC%88%E9%99%84%E5%8A%A0%E9%A2%98%EF%BC%89%EF%BC%88A%E5%8D%B7%EF%BC%89-RH134-c1"><span class="toc-number">1.0.0.7.</span> <span class="toc-text">20. 创建脚本（附加题）（A卷）: RH134-c1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#21-%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC%EF%BC%88%E9%99%84%E5%8A%A0%E9%A2%98%EF%BC%89%EF%BC%88B%E5%8D%B7%EF%BC%89-RH134-c1"><span class="toc-number">1.0.0.8.</span> <span class="toc-text">21. 创建脚本（附加题）（B卷）: RH134-c1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#22-%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E6%9D%83%E9%99%90%EF%BC%88%E9%99%84%E5%8A%A0%E9%A2%98%EF%BC%89"><span class="toc-number">1.0.0.9.</span> <span class="toc-text">22. 设置默认权限（附加题）</span></a></li></ol></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/12/11/EX294-RHCE8-QA/" class="archive-article-date">
-  	<time datetime="2021-12-11T14:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-11</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/11/EX294-RHCE8-QA/">RH124</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/11/23/RHCE/" class="archive-article-date">
-  	<time datetime="2021-11-23T23:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-23</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/11/23/RHCE/">RH124</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/09/08/passwd-reset/" class="archive-article-date">
-  	<time datetime="2021-09-08T19:12:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-08</time>
-</a>
 
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/08/passwd-reset/">passwd紧急模式</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/08/30/Web%E5%89%8D%E7%AB%AF/" class="archive-article-date">
-  	<time datetime="2021-08-30T12:12:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-30</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/30/Web%E5%89%8D%E7%AB%AF/">Web前端</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web-html//" class="article-tag-list-link color4">web-html</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/08/25/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2021-08-25T20:10:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-25</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/25/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux常用命令</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/08/24/head/" class="archive-article-date">
-  	<time datetime="2021-08-24T20:10:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-24</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/24/head/">从这个博客你能带走和留下什么</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/08/14/CentOS-7-%E9%85%8D%E7%BD%AEFTP%E8%99%9A%E6%8B%9F%E7%94%A8%E6%88%B7/" class="archive-article-date">
-  	<time datetime="2021-08-14T10:12:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-14</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/14/CentOS-7-%E9%85%8D%E7%BD%AEFTP%E8%99%9A%E6%8B%9F%E7%94%A8%E6%88%B7/">ftp虚拟用户</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">自学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Blog</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/08/12/OSI%E4%B8%83%E5%B1%82%E5%88%86%E6%9E%90/" class="archive-article-date">
-  	<time datetime="2021-08-12T20:59:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-12</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/12/OSI%E4%B8%83%E5%B1%82%E5%88%86%E6%9E%90/">OSI七层模型分析</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">自学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网络</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/网络//" class="article-tag-list-link color3">网络</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
+
+
+
+
+    <section id="comments" class="comments">
+      <style>
+        .utterances{max-width: 100%;}
+      </style>
+        <script src="https://utteranc.es/client.js"
+          repo="yanjieli77/comment-ut"
+          issue-term="title"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+        </script>
+    </section>
+  
+
+
 
 
           </div>
@@ -659,8 +616,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
